@@ -1,0 +1,11 @@
+{
+  "name": "farmacity",
+  "homepage": "https://github.com/cvazquez360/farmacity",
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
