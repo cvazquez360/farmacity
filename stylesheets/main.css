@@ -3565,6 +3565,26 @@
   width: 18px;
 }
 
+/* line 1, ../sass/components/_navbar.scss */
+.navbar-farmacity {
+  height: 70px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 0 0;
+}
+/* line 8, ../sass/components/_navbar.scss */
+.navbar-farmacity .navbar-brand img {
+  height: 40px;
+}
+/* line 14, ../sass/components/_navbar.scss */
+.navbar-farmacity .nav .open > a:focus {
+  background-color: transparent;
+}
+/* line 18, ../sass/components/_navbar.scss */
+.navbar-farmacity .nav a,
+.navbar-farmacity .nav a:hover {
+  background-color: transparent;
+}
+
 /* line 1, ../sass/pages/_login.scss */
 .login {
   background: url("../img/fondo.jpg") no-repeat center center fixed;
