@@ -1,7 +1,15 @@
-
+//Fuentes
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import "../bower_components/font-awesome/scss/font-awesome";
+$fa-font-path:   "../bower_components/font-awesome/fonts";
 
 // Basic
-@import "basic/_variables.scss";
+@import "basic/variables";
+
+// Components
+@import "components/buttons";
+@import "components/input";
 
 // Pages
-@import "pages/_home.scss";
+@import "pages/usuario-consulta";
+@import "pages/login";
