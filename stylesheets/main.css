@@ -3570,19 +3570,40 @@
   height: 70px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
   border-radius: 0 0 0 0;
+  z-index: 999999;
+  background-color: #fff;
 }
-/* line 8, ../sass/components/_navbar.scss */
+/* line 10, ../sass/components/_navbar.scss */
 .navbar-farmacity .navbar-brand img {
   height: 40px;
 }
-/* line 14, ../sass/components/_navbar.scss */
+/* line 16, ../sass/components/_navbar.scss */
 .navbar-farmacity .nav .open > a:focus {
   background-color: transparent;
 }
-/* line 18, ../sass/components/_navbar.scss */
+/* line 20, ../sass/components/_navbar.scss */
 .navbar-farmacity .nav a,
 .navbar-farmacity .nav a:hover {
   background-color: transparent;
+}
+/* line 26, ../sass/components/_navbar.scss */
+.navbar-farmacity .btn {
+  background-color: #e0e0e0;
+  border-color: #fff;
+  margin-top: 17px;
+  transition: .3s;
+}
+/* line 32, ../sass/components/_navbar.scss */
+.navbar-farmacity .btn:hover {
+  background-color: lightgray;
+  border-color: lightgray;
+}
+
+/* line 1, ../sass/components/_easy-sidebar.scss */
+.easy-sidebar {
+  z-index: 9;
+  background-color: #fff;
+  border-color: #e0e0e0;
 }
 
 /* line 1, ../sass/pages/_login.scss */
