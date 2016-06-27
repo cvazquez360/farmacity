@@ -3602,8 +3602,25 @@
 /* line 1, ../sass/components/_easy-sidebar.scss */
 .easy-sidebar {
   z-index: 9;
-  background-color: #fff;
+  background-color: #fafafa;
   border-color: #e0e0e0;
+  padding-top: 71px;
+}
+/* line 7, ../sass/components/_easy-sidebar.scss */
+.easy-sidebar .btn-primary {
+  background-color: white;
+  color: black;
+  border-color: white;
+}
+/* line 12, ../sass/components/_easy-sidebar.scss */
+.easy-sidebar .btn-primary:hover {
+  background-color: #ff9800;
+  color: white;
+}
+/* line 16, ../sass/components/_easy-sidebar.scss */
+.easy-sidebar .btn-primary:hover:active {
+  background-color: #e0e0e0;
+  border-color: white;
 }
 
 /* line 1, ../sass/pages/_login.scss */

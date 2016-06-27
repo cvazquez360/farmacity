@@ -1,5 +1,22 @@
 .easy-sidebar{
   z-index: 9;
-  background-color: #fff;
-  border-color: #e0e0e0;
+  background-color: #fafafa;
+  border-color: $grey;
+  padding-top: 71px;
+
+  .btn-primary{
+    background-color: white;
+    color: black;
+    border-color: white;
+
+    &:hover{
+      background-color: $orange;
+      color: white;
+
+    &:active{
+      background-color: $grey;
+      border-color: white;
+    }
+  }
+}
 }

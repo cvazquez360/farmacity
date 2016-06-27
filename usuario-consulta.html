@@ -21,63 +21,114 @@
     <![endif]-->
   </head>
  <body class="usuario-consulta">
-   <nav class="navbar navbar-farmacity">
-     <div class="container-fluid">
-     <div class="navbar-header">
-       <!-- Boton Menu -->
-       <span class="btn btn-danger glyphicon glyphicon-align-justify easy-sidebar-toggle"></span>
-       <a class="navbar-brand" href="#">
-       <img alt="Brand" src="img/logo.png">
-       </a>
-     </div>
-       <ul class="nav navbar-nav navbar-right">
-         <li class="dropdown">
-         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-         aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-2x" aria-hidden="true"></i>
-         Christian Vazquez <span class="caret"></span></a>
-         <ul class="dropdown-menu">
-           <li><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i> Configuración</a></li>
-           <li><a href="#"><i class="fa fa-times" aria-hidden="true"></i> Cerrar sesión</a></li>
-         </ul>
-         </li>
-       </ul>
-     </div>
-   </nav>
-      <!-- Desplegable Menu -->
-<div contextmenu="container-fluid easy-sidebar-container toggled">
- <nav class="navbar navbar-inverse easy-sidebar toggled">
-   <div class="container-fluid">
-     <div class="navbar-header">
-       <button type="button" class="navbar-toggle easy-sidebar-toggle" aria-expanded"false">
-       </button>
-       <a class="navbar-brand" href="#">Hola</a>
-     </div>
-   </div>
- </div>
- </nav>
- </body>
 
+  <!-- navbar -->
+  <nav class="navbar navbar-farmacity">
+    <div class="container-fluid">
+      <div class="navbar-header">
+      <span class="btn btn-danger glyphicon glyphicon-align-justify easy-sidebar-toggle"></span>
+      <a class="navbar-brand" href="#">
+        <img alt="Brand" src="img/logo.png">
+      </a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+        aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-2x" aria-hidden="true"></i>
+        Christian Vazquez <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+        <li><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i> Configuración</a></li>
+        <li><a href="login.html"><i class="fa fa-times" aria-hidden="true"></i> Cerrar sesión</a></li>
+        </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- Dependencias -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="bower_components/detect_swipe/jquery.detect_swipe.js"></script>
+   <!-- sidebar -->
+  <div contextmenu="container-fluid easy-sidebar-container toggled">
+    <nav class="navbar navbar-inverse easy-sidebar toggled">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="btn btn-primary" data-toggle="collapse" data-target="#ausentismos">Ausentismos</a>
+          <div id="ausentismos" class="collapse">
+            <a class="btn btn-primary" href="#">Solicitud</a>
+            <a class="btn btn-primary" href="#">Consulta</a>
+            <a class="btn btn-primary" href="#">Diagnostico</a>
+          </div>
+          <a class="btn btn-primary" data-toggle="collapse" data-target="#extrabancario">Extrabancario</a>
+          <div id="extrabancario" class="collapse">
+            <a class="btn btn-primary" href="#">Solicitud</a>
+            <a class="btn btn-primary" href="#">Consulta</a>
+            <a class="btn btn-primary" href="#">Diagnostico</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
 
-    <!-- Librerias propias -->
+  <!-- content -->
+  <div class="easy-sidebar-container toggled">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" href="#filtros">Filtros</a>
+              </h4>
+            </div>
+            <div id="filtros" class="panel-collapse collapse in ">
+              <div class="panel-body">
+                <form class="" action="index.html" method="post">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dependencias -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/detect_swipe/jquery.detect_swipe.js"></script>
+
+  <!-- Librerias propias -->
+  <script src="js/usuario-consulta.js"></script>
   </body>
-  <script>
-$('.easy-sidebar-toggle').click(function(e) {
-    e.preventDefault();
-    $('.easy-sidebar-container').toggleClass('toggled');
-    $('.navbar.easy-sidebar').toggleClass('toggled');
-});
-$('html').on('swiperight', function(){
-    $('.easy-sidebar-container').addClass('toggled');
-    $('.navbar.easy-sidebar').addClass('toggled');
-});
-$('html').on('swipeleft', function(){
-    $('.easy-sidebar-container').removeClass('toggled');
-    $('.navbar.easy-sidebar').removeClass('toggled');
-});
-</script>
 </html>
