@@ -9,6 +9,8 @@
     <!-- Dependencias -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="bower_components/bootstrap-easy-sidebar/easy-sidebar.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
+
 
     <!-- Librerias propias -->
     <link href="stylesheets/main.css" rel="stylesheet">
@@ -26,7 +28,7 @@
   <nav class="navbar navbar-farmacity">
     <div class="container-fluid">
       <div class="navbar-header">
-      <span class="btn btn-danger glyphicon glyphicon-align-justify easy-sidebar-toggle"></span>
+      <span class="btn glyphicon glyphicon-align-justify easy-sidebar-toggle"></span>
       <a class="navbar-brand" href="#">
         <img alt="Brand" src="img/logo.png">
       </a>
@@ -51,15 +53,15 @@
         <div class="navbar-header">
           <a class="btn btn-primary" data-toggle="collapse" data-target="#ausentismos">Ausentismos</a>
           <div id="ausentismos" class="collapse">
-            <a class="btn btn-primary" href="#">Solicitud</a>
-            <a class="btn btn-primary" href="#">Consulta</a>
-            <a class="btn btn-primary" href="#">Diagnostico</a>
+            <a class="btn btn-secondary" href="#">Solicitud</a>
+            <a class="btn btn-secondary" href="#">Consulta</a>
+            <a class="btn btn-secondary" href="#">Diagnostico</a>
           </div>
           <a class="btn btn-primary" data-toggle="collapse" data-target="#extrabancario">Extrabancario</a>
           <div id="extrabancario" class="collapse">
-            <a class="btn btn-primary" href="#">Solicitud</a>
-            <a class="btn btn-primary" href="#">Consulta</a>
-            <a class="btn btn-primary" href="#">Diagnostico</a>
+            <a class="btn btn-secondary" href="#">Solicitud</a>
+            <a class="btn btn-secondary" href="#">Consulta</a>
+            <a class="btn btn-secondary" href="#">Diagnostico</a>
           </div>
         </div>
       </div>
@@ -71,50 +73,146 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
-          <div class="panel panel-default">
+          <div class="panel panel-default panel-filtros">
             <div class="panel-heading">
               <h4 class="panel-title">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
                 <a data-toggle="collapse" href="#filtros">Filtros</a>
               </h4>
             </div>
-            <div id="filtros" class="panel-collapse collapse in ">
+            <div id="filtros" class="panel-collapse collapse">
               <div class="panel-body">
-                <form class="" action="index.html" method="post">
+                <form action="#" method="post">
                   <div class="row">
                     <div class="col-md-4">
                       <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                        <label>Nombre</label>
+                        <input type="text" class="form-control" placeholder="Ingrese un nombre">
                       </div>
                     </div>
                     <div class="col-md-4">
                       <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                        <label>Rol</label>
+                        <select class="form-control">
+                          <option value="none">Seleccione</option>
+                          <option>Administrador</option>
+                          <option>Operador</option>
+                          <option>Usuario</option>
+                        </select>
                       </div>
                     </div>
                     <div class="col-md-4">
                       <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                        <label>Usuario</label>
+                        <input type="text" class="form-control" placeholder="Ingrese un usuario">
                       </div>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-md-4">
                       <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                        <div class="form-group">
+                          <label>Fecha de alta</label>
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" name="daterange" value="01/01/2015 - 01/31/2015">
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div class="col-md-4">
                       <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                        <label>Fecha de baja</label>
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                          <input type="text" class="form-control" name="daterange" value="01/01/2015 - 01/31/2015">
+                        </div>
                       </div>
                     </div>
                   </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <button class="btn btn-primary">Filtrar</button>
+                        <button class="btn btn-default" type="reset">Limpiar</button>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
                 </form>
+              </div>
+            </div>
+            <!-- tabla -->
+            <div class="panel panel-default panel-filtros">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                  <a data-toggle="collapse" data-parent="#accordion" href="#tabla">Tabla</a>
+                </h4>
+              </div>
+            <div id="tabla" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Rol</th>
+                <th>F. Alta</th>
+                <th>F. Baja</th>
+                <th>Usuario</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Christian Vazquez</td>
+                <td>Administrador</td>
+                <td>22-09-2015</td>
+                <td>01-03-2016</td>
+                <td>Pununuk</td>
+                <td><i class="fa fa-trash-o" aria-hidden="true"></i></td>
+            </tr>
+            <tr>
+                <td>Christian Vazquez</td>
+                <td>Administrador</td>
+                <td>22-09-2015</td>
+                <td>01-03-2016</td>
+                <td>Pununuk</td>
+                <td><i class="fa fa-trash-o" aria-hidden="true"></i></td>
+            </tr>
+            <tr>
+                <td>Christian Vazquez</td>
+                <td>Administrador</td>
+                <td>22-09-2015</td>
+                <td>01-03-2016</td>
+                <td>Pununuk</td>
+                <td><i class="fa fa-trash-o" aria-hidden="true"></i></td>
+            </tr>
+            <tr>
+                <td>Christian Vazquez</td>
+                <td>Administrador</td>
+                <td>22-09-2015</td>
+                <td>01-03-2016</td>
+                <td>Pununuk</td>
+                <td><i class="fa fa-trash-o" aria-hidden="true"></i></td>
+            </tr>
+            <tr>
+                <td>Christian Vazquez</td>
+                <td>Administrador</td>
+                <td>22-09-2015</td>
+                <td>01-03-2016</td>
+                <td>Pununuk</td>
+                <td><i class="fa fa-trash-o" aria-hidden="true"></i></td>
+            </tr>
+        </tbody>
+    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+                </div>
               </div>
             </div>
           </div>
@@ -127,6 +225,8 @@
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="bower_components/detect_swipe/jquery.detect_swipe.js"></script>
+  <script src="bower_components/moment/min/moment.min.js"></script>
+  <script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
 
   <!-- Librerias propias -->
   <script src="js/usuario-consulta.js"></script>

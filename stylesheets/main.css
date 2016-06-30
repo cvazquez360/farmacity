@@ -3538,17 +3538,17 @@
 
 /* line 5, ../sass/components/_buttons.scss */
 .btn-primary {
-  background-color: #ff9800;
-  border: 1px solid #e68900;
+  background-color: #ffb74d;
+  border: 1px solid #ffad34;
 }
 /* line 9, ../sass/components/_buttons.scss */
 .btn-primary:hover {
-  background-color: #e68900;
-  border: 1px solid #e68900;
+  background-color: #ffad34;
+  border: 1px solid #ffad34;
 }
 /* line 17, ../sass/components/_buttons.scss */
 .btn-primary:hover {
-  background-color: #e68900;
+  background-color: #ffad34;
 }
 
 /* line 1, ../sass/components/_input.scss */
@@ -3565,13 +3565,18 @@
   width: 18px;
 }
 
+/* line 1, ../sass/components/_panels.scss */
+.panel-filtros {
+  box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.2);
+}
+
 /* line 1, ../sass/components/_navbar.scss */
 .navbar-farmacity {
   height: 70px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
   border-radius: 0 0 0 0;
   z-index: 999999;
-  background-color: #fff;
+  background-color: white;
 }
 /* line 10, ../sass/components/_navbar.scss */
 .navbar-farmacity .navbar-brand img {
@@ -3588,15 +3593,15 @@
 }
 /* line 26, ../sass/components/_navbar.scss */
 .navbar-farmacity .btn {
-  background-color: #e0e0e0;
-  border-color: #fff;
-  margin-top: 17px;
-  transition: .3s;
+  color: lightgray;
+  font-size: 24px;
+  margin-top: 10px;
+  transition: .5s;
 }
 /* line 32, ../sass/components/_navbar.scss */
 .navbar-farmacity .btn:hover {
-  background-color: lightgray;
-  border-color: lightgray;
+  background-color: #f5f5f5;
+  border-radius: 100%;
 }
 
 /* line 1, ../sass/components/_easy-sidebar.scss */
@@ -3608,18 +3613,45 @@
 }
 /* line 7, ../sass/components/_easy-sidebar.scss */
 .easy-sidebar .btn-primary {
-  background-color: white;
+  background-color: #fafafa;
   color: black;
-  border-color: white;
+  font-weight: bold;
+  border-color: #fafafa;
+  text-align: left;
+  padding-left: 15px;
 }
-/* line 12, ../sass/components/_easy-sidebar.scss */
+/* line 15, ../sass/components/_easy-sidebar.scss */
 .easy-sidebar .btn-primary:hover {
-  background-color: #ff9800;
+  background-color: #ffb74d;
   color: white;
 }
-/* line 16, ../sass/components/_easy-sidebar.scss */
+/* line 19, ../sass/components/_easy-sidebar.scss */
 .easy-sidebar .btn-primary:hover:active {
   background-color: #e0e0e0;
+  border-color: white;
+}
+/* line 26, ../sass/components/_easy-sidebar.scss */
+.easy-sidebar .btn-secondary {
+  background-color: white;
+  color: black;
+  font-weight: normal;
+  text-align: left;
+  padding-left: 30px;
+}
+/* line 33, ../sass/components/_easy-sidebar.scss */
+.easy-sidebar .btn-secondary:hover {
+  background-color: #ffb74d;
+  color: white;
+}
+/* line 39, ../sass/components/_easy-sidebar.scss */
+.easy-sidebar .btn-selected-primary {
+  background-color: #e0e0e0;
+  border-color: white;
+}
+/* line 45, ../sass/components/_easy-sidebar.scss */
+.easy-sidebar .btn-selected-secondary {
+  background-color: #ffb74d;
+  color: white;
   border-color: white;
 }
 
