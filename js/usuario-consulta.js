@@ -2,6 +2,8 @@
 
   'use strict';
 
+  moment.locale('es');
+
   $('.easy-sidebar-toggle').click(function(event) {
       $('.easy-sidebar-container').toggleClass('toggled');
       $('.navbar.easy-sidebar').toggleClass('toggled');
@@ -31,11 +33,22 @@
       $(this).addClass('btn-selected-secondary');
     });
 
-    $(function() {
-      $('input[name="daterange"]').daterangepicker();
+    $('input[name="daterange"]').daterangepicker({
+      autoApply: true,
+      startDate: moment()
     });
 
-    $(document).ready(function() {
-      $('#example').DataTable();
+    $(document).ready( function () {
+      $('#example').dataTable( {
+        "bLengthChange": false,
+        "searching": false,
+        "language": {
+            "lengthMenu": "Display _MENU_ records per page",
+            "zeroRecords": "Nothing found - sorry",
+            "info": "Página _PAGE_ de _PAGES_",
+            "infoEmpty": "No se encontraron registros",
+            "infoFiltered": "(filtered from _MAX_ total records)",
+        }
+      })
     });
 })();

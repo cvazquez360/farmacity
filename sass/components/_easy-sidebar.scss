@@ -1,14 +1,19 @@
 .easy-sidebar {
   z-index: 9;
-  background-color: #fafafa;
+  background-color: $grey-1;
   border-color: $grey;
   padding-top: 71px;
 
+  .btn{
+      border-radius: 0px;
+
+  }
+
   .btn-primary {
-    background-color: #fafafa;
+    background-color: $grey-1;
     color: black;
     font-weight: bold;
-    border-color: #fafafa;
+    border-color: none;
     text-align: left;
     padding-left: 15px;
 
@@ -31,20 +36,20 @@
    padding-left: 30px;
 
   &:hover{
-    background-color: #ffb74d;
+    background-color: $orange;
     color: white;
   }
 }
 
   .btn-selected-primary {
     background-color: $grey;
-    border-color: white;
+    border-color: none;
 
   }
 
   .btn-selected-secondary {
-    background-color: #ffb74d;
+    background-color: $orange;
     color: white;
-    border-color: white;
+    border-color: none;
   }
 }

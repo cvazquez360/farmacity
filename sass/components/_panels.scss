@@ -1,3 +1,22 @@
-.panel-filtros{
+.panel-filtros {
   box-shadow: 2px 2px 0 0 rgba(0,0,0,.2);
+
+  .btn-default {
+   border: solid $grey 1px;
+
+     &:hover {
+       border-color: $grey;
+     }
+  }
+
+  .btn-primary {
+   border: solid $orange 1px;
+  }
+
+   .filtro-titulo:hover {
+    text-decoration: none;
+  }
+  .no-sort::after { display: none!important; }
+
+  .no-sort { pointer-events: none!important; cursor: default!important; }
 }
