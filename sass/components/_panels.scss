@@ -9,6 +9,10 @@
      }
   }
 
+  .botones-primarios {
+    text-align: right;
+  }
+
   .btn-primary {
    border: solid $orange 1px;
   }
@@ -16,7 +20,21 @@
    .filtro-titulo:hover {
     text-decoration: none;
   }
+
   .no-sort::after { display: none!important; }
 
   .no-sort { pointer-events: none!important; cursor: default!important; }
+
+  .pagination>.active>a {
+    background-color: $orange;
+    border-color: $orange-darken;
+    outline: none;
+  }
+
+  .pagination>li>a:focus,
+  .pagination>li>a:hover,
+  .pagination>li>span:focus,
+  .pagination>li>span:hover {
+    outline: none;
+  }
 }

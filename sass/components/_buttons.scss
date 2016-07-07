@@ -6,6 +6,11 @@
 .btn-primary {
   background-color: $orange;
 
+  &:active{
+    border-color: $orange-darken;
+    background-color: $orange-darken;
+  }
+
   &:hover {
     background-color: $orange-darken;
   }
