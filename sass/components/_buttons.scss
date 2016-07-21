@@ -1,17 +1,17 @@
 .btn {
-    border-radius: 2px;
-    border: none;
+  border-radius: 2px;
 }
 
-.btn-primary {
-  background-color: $orange;
-
-  &:active{
-    border-color: $orange-darken;
-    background-color: $orange-darken;
-  }
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+  background-color: $orange !important;
+  border: 1px solid $orange-darken !important;
+  outline: none;
 
   &:hover {
-    background-color: $orange-darken;
+    border: 1px solid $orange-darken !important;
+    background-color: $orange-darken !important;
   }
 }

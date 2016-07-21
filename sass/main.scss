@@ -12,6 +12,9 @@ $fa-font-path:   "../bower_components/font-awesome/fonts";
 @import "components/panels";
 @import "components/navbar";
 @import "components/easy-sidebar";
+@import "components/modal-dialog";
+@import "components/validation";
+
 // Pages
 @import "pages/usuario-consulta";
 @import "pages/login";

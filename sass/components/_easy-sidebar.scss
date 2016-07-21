@@ -5,11 +5,11 @@
   padding-top: 71px;
 
   .btn{
-      border-radius: 0px;
+    border-radius: 0px;
 
   }
 
-  .btn-primary {
+  .btn-primary-sidebar {
     background-color: $grey-1;
     color: black;
     font-weight: bold;
@@ -21,25 +21,25 @@
       background-color: $orange;
       color: white;
 
-    &:active{
-      background-color: $grey;
-      border-color: white;
+      &:active{
+        background-color: $grey;
+        border-color: white;
+      }
     }
   }
-}
 
- .btn-secondary {
-   background-color: white;
-   color: black;
-   font-weight: normal;
-   text-align: left;
-   padding-left: 30px;
+  .btn-secondary-sidebar {
+    background-color: white;
+    color: black;
+    font-weight: normal;
+    text-align: left;
+    padding-left: 30px;
 
-  &:hover{
-    background-color: $orange;
-    color: white;
+    &:hover{
+      background-color: $orange;
+      color: white;
+    }
   }
-}
 
   .btn-selected-primary {
     background-color: $grey;

@@ -2,11 +2,11 @@
   box-shadow: 2px 2px 0 0 rgba(0,0,0,.2);
 
   .btn-default {
-   border: solid $grey 1px;
+    border: solid $grey 1px;
 
-     &:hover {
-       border-color: $grey;
-     }
+    &:hover {
+      border-color: $grey;
+    }
   }
 
   .botones-primarios {
@@ -14,10 +14,10 @@
   }
 
   .btn-primary {
-   border: solid $orange 1px;
+    border: solid $orange 1px;
   }
 
-   .filtro-titulo:hover {
+  .filtro-titulo:hover {
     text-decoration: none;
   }
 

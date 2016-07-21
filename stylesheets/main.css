@@ -3534,21 +3534,24 @@
 /* line 1, ../sass/components/_buttons.scss */
 .btn {
   border-radius: 2px;
-  border: none;
 }
 
-/* line 6, ../sass/components/_buttons.scss */
-.btn-primary {
-  background-color: #ffb74d;
+/* line 5, ../sass/components/_buttons.scss */
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #ffb74d !important;
+  border: 1px solid #ffad34 !important;
+  outline: none;
 }
-/* line 9, ../sass/components/_buttons.scss */
-.btn-primary:active {
-  border-color: #ffad34;
-  background-color: #ffad34;
-}
-/* line 14, ../sass/components/_buttons.scss */
-.btn-primary:hover {
-  background-color: #ffad34;
+/* line 13, ../sass/components/_buttons.scss */
+.btn-primary:hover,
+.btn-primary:focus:hover,
+.btn-primary:active:hover,
+.btn-primary.active:hover {
+  border: 1px solid #ffad34 !important;
+  background-color: #ffad34 !important;
 }
 
 /* line 1, ../sass/components/_input.scss */
@@ -3658,7 +3661,7 @@
   border-radius: 0px;
 }
 /* line 12, ../sass/components/_easy-sidebar.scss */
-.easy-sidebar .btn-primary {
+.easy-sidebar .btn-primary-sidebar {
   background-color: #fafafa;
   color: black;
   font-weight: bold;
@@ -3667,17 +3670,17 @@
   padding-left: 15px;
 }
 /* line 20, ../sass/components/_easy-sidebar.scss */
-.easy-sidebar .btn-primary:hover {
+.easy-sidebar .btn-primary-sidebar:hover {
   background-color: #ffb74d;
   color: white;
 }
 /* line 24, ../sass/components/_easy-sidebar.scss */
-.easy-sidebar .btn-primary:hover:active {
+.easy-sidebar .btn-primary-sidebar:hover:active {
   background-color: #e0e0e0;
   border-color: white;
 }
 /* line 31, ../sass/components/_easy-sidebar.scss */
-.easy-sidebar .btn-secondary {
+.easy-sidebar .btn-secondary-sidebar {
   background-color: white;
   color: black;
   font-weight: normal;
@@ -3685,7 +3688,7 @@
   padding-left: 30px;
 }
 /* line 38, ../sass/components/_easy-sidebar.scss */
-.easy-sidebar .btn-secondary:hover {
+.easy-sidebar .btn-secondary-sidebar:hover {
   background-color: #ffb74d;
   color: white;
 }
@@ -3699,6 +3702,27 @@
   background-color: #ffb74d;
   color: white;
   border-color: none;
+}
+
+/* line 1, ../sass/components/_modal-dialog.scss */
+.modal-dialog {
+  padding-top: 100px;
+  padding-left: 100px;
+  margin-bottom: 50px;
+}
+
+/* line 3, ../sass/components/_validation.scss */
+.login .form-control-feedback {
+  line-height: 46px;
+}
+/* line 7, ../sass/components/_validation.scss */
+.login .help-block {
+  font-size: 14px;
+}
+
+/* line 13, ../sass/components/_validation.scss */
+.usuario-consulta .form-control-feedback {
+  width: 50px;
 }
 
 /* line 2, ../sass/pages/_usuario-consulta.scss */

@@ -1,67 +1,68 @@
 <!DOCTYPE html>
 <html class="easy-sidebar-active" lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Farmacity</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Farmacity</title>
 
-    <!-- Dependencias -->
-    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="bower_components/bootstrap-easy-sidebar/easy-sidebar.css">
-    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
-    <link rel="stylesheet" type="text/css" href="bower_components/datatables/media/css/dataTables.bootstrap.min.css">
+  <!-- Dependencias -->
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="bower_components/bootstrap-easy-sidebar/easy-sidebar.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/datatables/media/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/form.validation/dist/css/formValidation.min.css">
 
-    <!-- Librerias propias -->
-    <link href="stylesheets/main.css" rel="stylesheet">
+  <!-- Librerias propias -->
+  <link href="stylesheets/main.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
- <body class="usuario-consulta">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="usuario-consulta">
 
   <!-- navbar -->
   <nav class="navbar navbar-farmacity">
     <div class="container-fluid">
       <div class="navbar-header">
-      <span class="btn glyphicon glyphicon-align-justify easy-sidebar-toggle"></span>
-      <a class="navbar-brand" href="#">
-        <img alt="Brand" src="img/logo.png">
-      </a>
+        <span class="btn glyphicon glyphicon-align-justify easy-sidebar-toggle"></span>
+        <a class="navbar-brand" href="#">
+          <img alt="Brand" src="img/logo.png">
+        </a>
       </div>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-        aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-2x" aria-hidden="true"></i>
-        Christian Vazquez <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-        <li><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i> Configuración</a></li>
-        <li><a href="login.html"><i class="fa fa-times" aria-hidden="true"></i> Cerrar sesión</a></li>
-        </ul>
+          aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-2x" aria-hidden="true"></i>
+          Christian Vazquez <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i> Configuración</a></li>
+            <li><a href="login.html"><i class="fa fa-times" aria-hidden="true"></i> Cerrar sesión</a></li>
+          </ul>
         </li>
       </ul>
     </div>
   </nav>
 
-   <!-- sidebar -->
+  <!-- sidebar -->
   <div contextmenu="container-fluid easy-sidebar-container toggled">
     <nav class="navbar navbar-inverse easy-sidebar toggled">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="btn btn-primary" data-toggle="collapse" data-target="#ausentismos">Ausentismos</a>
+          <a class="btn btn-primary-sidebar" data-toggle="collapse" data-target="#ausentismos">Ausentismos</a>
           <div id="ausentismos" class="collapse">
-            <a class="btn btn-secondary" href="#">Solicitud</a>
-            <a class="btn btn-secondary" href="#">Consulta</a>
-            <a class="btn btn-secondary" href="#">Diagnostico</a>
+            <a class="btn btn-secondary-sidebar" href="#">Solicitud</a>
+            <a class="btn btn-secondary-sidebar" href="#">Consulta</a>
+            <a class="btn btn-secondary-sidebar" href="#">Diagnostico</a>
           </div>
-          <a class="btn btn-primary" data-toggle="collapse" data-target="#extrabancario">Extrabancario</a>
+          <a class="btn btn-primary-sidebar" data-toggle="collapse" data-target="#extrabancario">Extrabancario</a>
           <div id="extrabancario" class="collapse">
-            <a class="btn btn-secondary" href="#">Solicitud</a>
-            <a class="btn btn-secondary" href="#">Consulta</a>
-            <a class="btn btn-secondary" href="#">Diagnostico</a>
+            <a class="btn btn-secondary-sidebar" href="#">Solicitud</a>
+            <a class="btn btn-secondary-sidebar" href="#">Consulta</a>
+            <a class="btn btn-secondary-sidebar" href="#">Diagnostico</a>
           </div>
         </div>
       </div>
@@ -77,9 +78,9 @@
             <div class="panel-heading">
               <h4 class="panel-title">
                 <a data-toggle="collapse" class="button-collapse filtro-titulo"
-                  href="#filtros" onclick="animateCollapsibles();">
-                  <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                  Filtros</a>
+                href="#filtros" onclick="animateCollapsibles();">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                Filtros</a>
               </h4>
             </div>
             <div id="filtros" class="panel-collapse collapse">
@@ -105,8 +106,13 @@
                     </div>
                     <div class="col-md-4">
                       <div class="form-group">
-                        <label>Usuario</label>
-                        <input type="text" class="form-control" placeholder="Ingrese un usuario">
+                        <div class="form-group">
+                          <label>Usuario</label>
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" placeholder="Ingrese un usuario">
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -135,246 +141,72 @@
                   <div class="botones-primarios">
                     <div class="row">
                       <div class="col-md-12">
-                        <div class="form-group">
-                          <button class="btn btn-primary">Filtrar</button>
-                          <button class="btn btn-default" type="reset">Limpiar</button>
-                        </div>
+                        <button class="btn btn-primary">Filtrar</button>
+                        <button class="btn btn-default" type="reset">Limpiar</button>
                       </div>
                     </div>
                   </div>
-                 </div>
-                </form>
-              </div>
+                </div>
+              </form>
             </div>
-            <!-- tabla -->
-            <div class="tabla-conten">
+          </div>
+
+          <!-- tabla -->
+          <div class="tabla-conten">
             <div class="panel panel-default panel-filtros">
               <div class="panel-heading">
                 <h4 class="panel-title">
                   <a data-toggle="collapse" class="button-collapse filtro-titulo"
-                    href="#tabla" onclick="animateCollapsibles();">
-                    <i class="fa fa-chevron-down" aria-hidden="true"></i>Tabla</a>
+                  href="#tabla" onclick="animateCollapsibles();">
+                  <i class="fa fa-chevron-down" aria-hidden="true"></i>Tabla</a>
                 </h4>
               </div>
-            <div id="tabla" class="panel-collapse collapse in">
-              <div class="panel-body">
-                <div class="botones-primarios">
-                  <button class="btn btn-primary">Nuevo Rol</button>
+              <div id="tabla" class="panel-collapse collapse in">
+                <div class="panel-body">
+
+                  <div class="dropdown pull-right">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Acciones
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a data-toggle="modal" data-target="#myModal">Nuevo</a></li>
+                    <li><a href="#">Exportar</a></li>
+                  </ul>
                 </div>
+
                 <div class="row">
                   <div class="col-md-12">
-                    <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
-                      <thead>
-                        <tr>
-                          <th>Nombre</th>
-                          <th>Rol</th>
-                          <th>Usuario</th>
-                          <th width="60px">F. Alta</th>
-                          <th width="60px">F. Baja</th>
-                          <th class="no-sort" width="25px"></th
+                    <table id="example" class="table table-striped table-bordered"
+                    cellspacing="0" width="100%">
+                    <thead>
+                      <tr>
+                        <th>Nombre</th>
+                        <th>Rol</th>
+                        <th>Usuario</th>
+                        <th width="60px">F. Alta</th>
+                        <th width="60px">F. Baja</th>
+                        <th class="no-sort" width="20px"></th
                         </tr>
                       </thead>
-                        <tbody>
-                          <tr>
-                            <td>Christian Vazquez</td>
-                            <td>Administrador</td>
-                            <td>Pununuk</td>
-                            <td>22-09-2015</td>
-                            <td>01-03-2016</td>
-                          <td class="text-center">
+                      <tbody>
+                        <tr>
+                          <td>Christian Vazquez</td>
+                          <td>Administrador</td>
+                          <td>Pununuk</td>
+                          <td>22-09-2015</td>
+                          <td>01-03-2016</td>
+                          <td class="text-center" data-toggle="modal" data-target="#myModal-editar">
                             <button class="btn btn-link">
-                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                              <i class="fa fa-pencil" aria-hidden="true"></i>
                             </button>
                           </td>
-                          </tr>
-                          <tr>
-                            <td>Christian Vazquez</td>
-                            <td>Administrador</td>
-                            <td>Pununuk</td>
-                            <td>22-09-2015</td>
-                            <td>01-03-2016</td>
-                          <td class="text-center">
-                            <button class="btn btn-link">
-                            <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
-                          </td>
-                          </tr>
-                          <tr>
-                            <td>Christian Vazquez</td>
-                            <td>Administrador</td>
-                            <td>Pununuk</td>
-                            <td>22-09-2015</td>
-                            <td>01-03-2016</td>
-                          <td class="text-center">
-                            <button class="btn btn-link">
-                            <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
-                          </td>
-                          </tr>
-                          <tr>
-                            <td>Christian Vazquez</td>
-                            <td>Administrador</td>
-                            <td>Pununuk</td>
-                            <td>22-09-2015</td>
-                            <td>01-03-2016</td>
-                          <td class="text-center">
-                            <button class="btn btn-link">
-                            <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
-                          </td>
-                          </tr>
-                          <tr>
-                            <td>Christian Vazquez</td>
-                            <td>Administrador</td>
-                            <td>Pununuk</td>
-                            <td>22-09-2015</td>
-                            <td>01-03-2016</td>
-                          <td class="text-center">
-                            <button class="btn btn-link">
-                            <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
-                          </td>
-                          </tr>
-                          <tr>
-                            <td>Christian Vazquez</td>
-                            <td>Administrador</td>
-                            <td>Pununuk</td>
-                            <td>22-09-2015</td>
-                            <td>01-03-2016</td>
-                          <td class="text-center">
-                            <button class="btn btn-link">
-                            <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
-                          </td>
-                          </tr>
-                          <tr>
-                            <td>Christian Vazquez</td>
-                            <td>Administrador</td>
-                            <td>Pununuk</td>
-                            <td>22-09-2015</td>
-                            <td>01-03-2016</td>
-                          <td class="text-center">
-                            <button class="btn btn-link">
-                            <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
-                          </td>
-                          </tr>
-                          <tr>
-                            <td>Christian Vazquez</td>
-                            <td>Administrador</td>
-                            <td>Pununuk</td>
-                            <td>22-09-2015</td>
-                            <td>01-03-2016</td>
-                          <td class="text-center">
-                            <button class="btn btn-link">
-                            <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
-                          </td>
-                          </tr>
-                          <tr>
-                            <td>Christian Vazquez</td>
-                            <td>Administrador</td>
-                            <td>Pununuk</td>
-                            <td>22-09-2015</td>
-                            <td>01-03-2016</td>
-                          <td class="text-center">
-                            <button class="btn btn-link">
-                            <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
-                          </td>
-                          </tr>
-                          <tr>
-                            <td>Christian Vazquez</td>
-                            <td>Administrador</td>
-                            <td>Pununuk</td>
-                            <td>22-09-2015</td>
-                            <td>01-03-2016</td>
-                          <td class="text-center">
-                            <button class="btn btn-link">
-                            <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
-                          </td>
-                          </tr>
-                          <tr>
-                            <td>Christian Vazquez</td>
-                            <td>Administrador</td>
-                            <td>Pununuk</td>
-                            <td>22-09-2015</td>
-                            <td>01-03-2016</td>
-                          <td class="text-center">
-                            <button class="btn btn-link">
-                            <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
-                          </td>
-                          </tr>
-                          <tr>
-                            <td>Christian Vazquez</td>
-                            <td>Administrador</td>
-                            <td>Pununuk</td>
-                            <td>22-09-2015</td>
-                            <td>01-03-2016</td>
-                          <td class="text-center">
-                            <button class="btn btn-link">
-                            <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
-                          </td>
-                          </tr>
-                          <tr>
-                            <td>Christian Vazquez</td>
-                            <td>Administrador</td>
-                            <td>Pununuk</td>
-                            <td>22-09-2015</td>
-                            <td>01-03-2016</td>
-                          <td class="text-center">
-                            <button class="btn btn-link">
-                            <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
-                          </td>
-                          </tr>
-                          <tr>
-                            <td>Christian Vazquez</td>
-                            <td>Administrador</td>
-                            <td>Pununuk</td>
-                            <td>22-09-2015</td>
-                            <td>01-03-2016</td>
-                          <td class="text-center">
-                            <button class="btn btn-link">
-                            <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
-                          </td>
-                          </tr>
-                          <tr>
-                            <td>Christian Vazquez</td>
-                            <td>Administrador</td>
-                            <td>Pununuk</td>
-                            <td>22-09-2015</td>
-                            <td>01-03-2016</td>
-                          <td class="text-center">
-                            <button class="btn btn-link">
-                            <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
-                          </td>
-                          </tr>
-                          <tr>
-                            <td>Christian Vazquez</td>
-                            <td>Administrador</td>
-                            <td>Pununuk</td>
-                            <td>22-09-2015</td>
-                            <td>01-03-2016</td>
-                          <td class="text-center">
-                            <button class="btn btn-link">
-                            <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
-                          </td>
-                          </tr>
-                        </tbody>
+                        </tr>
+                      </tbody>
                     </table>
                   </div>
                 </div>
-              </div>
-            </div>
-                </div>
-              </div>
               </div>
             </div>
           </div>
@@ -382,17 +214,188 @@
       </div>
     </div>
   </div>
+</div>
+</div>
+</div>
+</div>
 
-  <!-- Dependencias -->
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="bower_components/detect_swipe/jquery.detect_swipe.js"></script>
-  <script src="bower_components/moment/min/moment-with-locales.min.js"></script>
-  <script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
-  <script src="bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
-  <script src="bower_components/datatables/media/js/dataTables.bootstrap.min.js"></script>
+<!-- Modal Nuevo -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+aria-labelledby="myModalLabel">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal"
+      aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4 class="modal-title" id="myModalLabel">Nuevo Usuario</h4>
+    </div>
+    <div class="modal-body">
+      <form action="#" method="get" id="newForm">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Nombre</label>
+              <input type="text" class="form-control" name="newName" placeholder="Ingrese un nombre">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <div class="form-group">
+                <label>Usuario</label>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" name="newUser" placeholder="Ingrese un usuario">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <div class="form-group">
+                <label>Email</label>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa" aria-hidden="true">@</i></span>
+                  <input type="text" class="form-control" name="newMail" placeholder="Ingrese un email">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-7">
+                <div class="form-group">
+                  <label>Rol</label>
+                  <select class="form-control" name="newRol">
+                    <option value=""></option>
+                    <option>Administrador</option>
+                    <option>Operador</option>
+                    <option>Usuario</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="form-group">
+                  <div class="form-group">
+                    <label>Fecha de alta</label>
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                      <input type="text" class="form-control" name="fecha" value="01/01/2016" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+      <button type="submit" class="btn btn-primary">Guardar</button>
+      <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+    </div>
+    </form>
+  </div>
+</div>
+</div>
 
-  <!-- Librerias propias -->
-  <script src="js/usuario-consulta.js"></script>
-  </body>
+<!-- Modal Editar -->
+<div class="modal fade" id="myModal-editar" tabindex="-1" role="dialog"
+aria-labelledby="myModalLabel">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal"
+      aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4 class="modal-title" id="myModalLabel">Editar Usuario</h4>
+    </div>
+    <div class="modal-body">
+      <form action="#" method="get" id="editForm">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Nombre</label>
+              <input type="text" class="form-control" name="newName" placeholder="Ingrese un nombre">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <div class="form-group">
+                <label>Usuario</label>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" name="newUser" placeholder="Ingrese un usuario">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-group">
+            <label>Email</label>
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa" aria-hidden="true">@</i></span>
+              <input type="text" class="form-control" name="newMail" placeholder="Ingrese un email">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-7">
+                <div class="form-group">
+                  <label>Rol</label>
+                  <select class="form-control" name="newRol">
+                    <option value=""></option>
+                    <option>Administrador</option>
+                    <option>Operador</option>
+                    <option>Usuario</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="form-group">
+                  <div class="form-group">
+                    <label>Fecha de alta</label>
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                      <input type="text" class="form-control" name="fecha" value="01/01/2016" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+      <button type="submit" class="btn btn-primary">Guardar</button>
+      <button type="button" class="btn btn-primary">Eliminar</button>
+      <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+    </div>
+  </form>
+  </div>
+</div>
+</div>
+
+<!-- Dependencias -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/detect_swipe/jquery.detect_swipe.js"></script>
+<script src="bower_components/moment/min/moment-with-locales.min.js"></script>
+<script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+<script src="bower_components/datatables/media/js/dataTables.bootstrap.min.js"></script>
+<script src="bower_components/form.validation/dist/js/formValidation.min.js"></script>
+<script src="bower_components/form.validation/dist/js/framework/bootstrap.min.js"></script>
+
+<!-- Librerias propias -->
+<script src="js/usuario-consulta.js"></script>
+</body>
 </html>
